@@ -1,0 +1,73 @@
+/* Define CSS variables for easy theming */
+        /* NOTE: Updated color palette to match the provided logo */
+        :root {
+            --navy: #173753;
+            --gold: #C9B6A1;
+            --white: #F9F7F1;
+            --text-dark: #0b132b;
+            --muted: #6c757d;
+        }
+
+        /* Base styles for body and general elements */
+        body { font-family: 'Montserrat', Arial, sans-serif; color: var(--text-dark); background-color: var(--white); }
+        .navbar { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .navbar-brand, .nav-link { color: var(--navy) !important; font-weight: 600; }
+        .nav-link:hover, .nav-link.active { color: var(--gold) !important; }
+        .btn-gold { background: var(--gold); color: #1a1a1a; font-weight: 700; border: none; }
+        .btn-gold:hover { filter: brightness(0.95); }
+        .btn-outline-gold {
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            background-color: transparent;
+            font-weight: 700;
+        }
+        .btn-outline-gold:hover {
+            background-color: var(--gold);
+            color: #1a1a1a;
+        }
+
+        .badge-gold { background: var(--gold); color: #1a1a1a; }
+        .section-title { color: var(--navy); font-weight: 800; letter-spacing: .5px; }
+        .section-subtitle { color: var(--muted); }
+
+        /* Hero section specific styles */
+        .hero { height: 90vh; }
+        .hero .swiper-slide { position: relative; }
+        .hero .slide-bg { width: 100%; height: 90vh; object-fit: cover; filter: brightness(0.65); }
+        .hero .overlay { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 0 1rem; }
+        .hero h1 { color: var(--white); font-size: clamp(2rem, 5vw, 4rem); font-weight: 800; text-transform: uppercase; }
+        .hero p { color: #f0f0f0; max-width: 820px; margin: 0 auto 1.25rem; }
+
+        /* Vision & Mission card styles */
+        .vm-card { border: 2px solid rgba(23,55,83,0.08); border-radius: 1rem; padding: 1.5rem; background: #fff; height: 100%; }
+
+        /* Advisor photo styles */
+        .advisor-pic { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 6px solid var(--gold); }
+
+        /* Event card styles */
+        .event-card { border: 1px solid rgba(0,0,0,0.08); border-radius: 1rem; overflow: hidden; transition: transform .25s ease, box-shadow .25s ease; }
+        .event-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.12); }
+
+        /* Gallery image styles */
+        .gallery-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: .75rem; }
+
+        /* Team member card styles */
+        .team-card { text-align: center; padding: 1.25rem; border: 1px solid rgba(0,0,0,0.08); border-radius: 1rem; transition: transform .25s; background: #fff; }
+        .team-card:hover { transform: translateY(-4px); }
+        .team-photo { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; border: 6px solid var(--navy); }
+        .team-role { color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+
+        /* Achievements timeline styles */
+        .timeline { position: relative; padding-left: 1.5rem; }
+        .timeline::before { content: ""; position: absolute; left: 12px; top: 0; bottom: 0; width: 4px; background: rgba(23,55,83,.2); border-radius: 2px; }
+        .timeline-item { position: relative; margin-bottom: 1.25rem; }
+        .timeline-item::marker { content: none; }
+        .timeline-dot { position: absolute; left: -2px; top: .35rem; width: 20px; height: 20px; background: var(--gold); border-radius: 50%; border: 3px solid var(--white); box-shadow: 0 0 0 4px rgba(201,182,161,.35); }
+
+        /* Footer styles */
+        footer { background: var(--navy); color: var(--white); }
+        footer a { color: var(--white); opacity: .9; text-decoration: none; }
+        footer a:hover { color: var(--gold); opacity: 1; }
+
+        /* Back to Top button styles */
+        #backToTop { position: fixed; right: 1rem; bottom: 1rem; display: none; z-index: 999; }

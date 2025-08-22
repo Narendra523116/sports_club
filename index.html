@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sports Club</title>
+
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Swiper (Hero Slider) CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- LightGallery (Gallery Lightbox) CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- Brand and logo -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <!-- NOTE: The logo has been updated to the one you provided -->
+                <img src="https://sdmntpreastus.oaiusercontent.com/files/00000000-f544-61f9-9b28-e29737a48552/raw?se=2025-08-21T19%3A08%3A27Z&sp=r&sv=2024-08-04&sr=b&scid=4c1b30e5-ff79-5695-a35d-c6ae512060f1&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-20T20%3A52%3A49Z&ske=2025-08-21T20%3A52%3A49Z&sks=b&skv=2024-08-04&sig=w3JmLGqNhssrlzD7cZ0TkvTCp1j36V1GFTEVLRIMyFM%3D" alt="PVPSIT Departmental Sports Club Logo" style="width: 48px; height: auto; border-radius: 10px" />
+                <span>Sports Club</span>
+            </a>
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div id="navMenu" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero position-relative">
+        <!-- Swiper for the hero slider -->
+        <div class="swiper hero-swiper h-100">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img class="slide-bg" src="https://picsum.photos/seed/sport1/1600/900" alt="A team of athletes huddling together before a game" />
+                    <div class="overlay">
+                        <div>
+                            <h1>Teamwork</h1>
+                            <p class="lead">Welcome to our Sports Club — where discipline, teamwork, and passion forge champions on and off the field.</p>
+                            <a href="#events" class="btn btn-gold btn-lg">Join an Event</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img class="slide-bg" src="https://picsum.photos/seed/sport2/1600/900" alt="A runner sprinting on a track, focused on the finish line" />
+                    <div class="overlay">
+                        <div>
+                            <h1>Persevere</h1>
+                            <p class="lead">From endurance to excellence, our training culture transforms effort into achievement.</p>
+                            <a href="#about" class="btn btn-gold btn-lg">Explore the Club</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img class="slide-bg" src="https://picsum.photos/seed/sport3/1600/900" alt="Two volleyball players leaping at the net during a game" />
+                    <div class="overlay">
+                        <div>
+                            <h1>Victory</h1>
+                            <p class="lead">Be part of a community that celebrates grit, growth, and great sportsmanship.</p>
+                            <a href="#contact" class="btn btn-gold btn-lg">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- NOTE: Added a new fourth slide to the hero section -->
+                <div class="swiper-slide">
+                    <img class="slide-bg" src="https://picsum.photos/seed/sport4/1600/900" alt="A male athlete doing strength training" />
+                    <div class="overlay">
+                        <div>
+                            <h1>Build Your Strength</h1>
+                            <p class="lead">Our state-of-the-art facilities and expert trainers help you achieve your personal best.</p>
+                            <!-- NOTE: Changed the button style here for an example -->
+                            <a href="#contact" class="btn btn-outline-gold btn-lg">Reach Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper pagination and navigation buttons -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 py-lg-6">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-3">About the Club</h2>
+                    <p class="section-subtitle">Motto: <strong>Strength in Unity</strong></p>
+                    <p>
+                        We cultivate a culture of excellence through structured training, competitive exposure, and inclusive community programs. Our athletes compete across inter-college and district tournaments while also contributing to campus wellness initiatives.
+                    </p>
+                    <div class="row g-3 mt-2">
+                        <div class="col-sm-6">
+                            <div class="vm-card h-100">
+                                <h5 class="mb-2 text-uppercase" style="color:var(--navy);">Vision</h5>
+                                <p class="mb-0">To become a benchmark college sports program known for athlete development, integrity, and winning spirit.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="vm-card h-100">
+                                <h5 class="mb-2 text-uppercase" style="color:var(--navy);">Mission</h5>
+                                <p class="mb-0">Provide world‑class coaching, facilities, and competitive opportunities that elevate every student athlete.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center text-lg-start">
+                        <img src="https://picsum.photos/seed/coach/600/400" class="advisor-pic mb-3" alt="A sports coach smiling and giving a thumbs up" />
+                        <h5 class="mb-1" style="color:var(--navy);">Faculty Advisor</h5>
+                        <p class="mb-2 text-muted">Dr. A. Sharma, M.P.Ed., Ph.D.</p>
+                        <p class="mb-0">“Sport is a classroom for life — it teaches resilience, respect, and responsibility. Our aim is to unlock both athletic and academic potential for every member.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="section-title mb-1">Events</h2>
+                    <p class="section-subtitle mb-0">Upcoming competitions, trials, and workshops</p>
+                </div>
+                <a href="#contact" class="btn btn-gold">Register Interest</a>
+            </div>
+
+            <div class="row g-4">
+                <!-- Event Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="event-card h-100">
+                        <img src="https://picsum.photos/seed/event1/800/500" alt="Football players in a huddle on a green field" class="w-100" />
+                        <div class="p-3">
+                            <span class="badge badge-gold mb-2">Upcoming</span>
+                            <h5 style="color:var(--navy);">Inter-College Football Trials</h5>
+                            <p class="text-muted mb-2">Sep 10, 2025 • 7:00 AM • Main Ground</p>
+                            <p class="small">Open trials for the 2025 squad. Bring your ID and gear. Fitness test + 7v7 scrimmage.</p>
+                            <a href="https://forms.gle/" target="_blank" class="btn btn-sm btn-gold">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="event-card h-100">
+                        <img src="https://picsum.photos/seed/event2/800/500" alt="An open book with healthy food on a kitchen counter" class="w-100" />
+                        <div class="p-3">
+                            <span class="badge bg-secondary mb-2">Workshop</span>
+                            <h5 style="color:var(--navy);">Sports Nutrition 101</h5>
+                            <p class="text-muted mb-2">Sep 18, 2025 • 4:00 PM • Seminar Hall</p>
+                            <p class="small">Dietician-led session on fueling performance, hydration, and recovery routines.</p>
+                            <a href="https://forms.gle/" target="_blank" class="btn btn-sm btn-outline-dark">Reserve Seat</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="event-card h-100">
+                        <img src="https://picsum.photos/seed/event3/800/500" alt="Athletes running on a track during a race" class="w-100" />
+                        <div class="p-3">
+                            <span class="badge bg-secondary mb-2">Tournament</span>
+                            <h5 style="color:var(--navy);">Campus Athletics Meet</h5>
+                            <p class="text-muted mb-2">Oct 05, 2025 • 8:00 AM • Stadium</p>
+                            <p class="small">Track & field events across sprints, jumps, and throws. Spectators welcome.</p>
+                            <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5" />
+            <h5 class="mb-3" style="color:var(--navy);">Past Events</h5>
+            <ul class="list-unstyled">
+                <li class="mb-2">• Inter-College Football Finals — <em>Champions 2024</em>. <a href="#gallery">See album</a></li>
+                <li class="mb-2">• State-level Volleyball Qualifiers — <em>Semi-finalists</em>. <a href="#gallery">See album</a></li>
+                <li class="mb-2">• Fitness Bootcamp (Summer 2024) — <em>120 participants</em>. <a href="#gallery">See album</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-1">Gallery</h2>
+            <p class="section-subtitle">Highlights from our training, matches, and events</p>
+
+            <!-- LightGallery container -->
+            <div id="lightgallery" class="row g-3">
+                <!-- Gallery Item 1 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/seed/g1/1600/1200" data-lg-size="1600-1200" class="d-block">
+                        <img class="gallery-img" src="https://picsum.photos/seed/g1/600/600" alt="Close-up of a basketball player dribbling the ball" />
+                    </a>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/seed/g2/1600/1200" data-lg-size="1600-1200" class="d-block">
+                        <img class="gallery-img" src="https://picsum.photos/seed/g2/600/600" alt="Two badminton players reaching for a shuttlecock" />
+                    </a>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/seed/g3/1600/1200" data-lg-size="1600-1200" class="d-block">
+                        <img class="gallery-img" src="https://picsum.photos/seed/g3/600/600" alt="A group of soccer players celebrating a goal" />
+                    </a>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/seed/g4/1600/1200" data-lg-size="1600-1200" class="d-block">
+                        <img class="gallery-img" src="https://picsum.photos/seed/g4/600/600" alt="A female athlete throwing a javelin" />
+                    </a>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/seed/g5/1600/1200" data-lg-size="1600-1200" class="d-block">
+                        <img class="gallery-img" src="https://picsum.photos/seed/g5/600/600" alt="A swimmer in a pool, pushing off the wall" />
+                    </a>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/seed/g6/1600/1200" data-lg-size="1600-1200" class="d-block">
+                        <img class="gallery-img" src="https://picsum.photos/seed/g6/600/600" alt="A tennis player hitting a backhand shot" />
+                    </a>
+                </div>
+                <!-- Gallery Item 7 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/seed/g7/1600/1200" data-lg-size="1600-1200" class="d-block">
+                        <img class="gallery-img" src="https://picsum.photos/seed/g7/600/600" alt="A group of people doing yoga in an open field" />
+                    </a>
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/seed/g8/1600/1200" data-lg-size="1600-1200" class="d-block">
+                        <img class="gallery-img" src="https://picsum.photos/seed/g8/600/600" alt="A team of rowers on a river at sunrise" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title mb-1">Team</h2>
+            <p class="section-subtitle">Coordinators and Captains</p>
+
+            <div class="row g-4">
+                <!-- Team Member 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="team-card h-100">
+                        <img src="https://picsum.photos/seed/m1/500/500" alt="Aarav Patel, Sports Club Coordinator" class="team-photo mb-3" />
+                        <h5 class="mb-1" style="color:var(--navy);">Aarav Patel</h5>
+                        <div class="team-role mb-2">Club Coordinator</div>
+                        <p class="small text-muted mb-0">Sports mgmt • Strategy • Events</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="team-card h-100">
+                        <img src="https://picsum.photos/seed/m2/500/500" alt="Ishita Rao, Design Lead" class="team-photo mb-3" />
+                        <h5 class="mb-1" style="color:var(--navy);">Ishita Rao</h5>
+                        <div class="team-role mb-2">Design Lead</div>
+                        <p class="small text-muted mb-0">Brand • Media • UI/UX</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="team-card h-100">
+                        <img src="https://picsum.photos/seed/m3/500/500" alt="Rohit Verma, Tech Lead" class="team-photo mb-3" />
+                        <h5 class="mb-1" style="color:var(--navy);">Rohit Verma</h5>
+                        <div class="team-role mb-2">Tech Lead</div>
+                        <p class="small text-muted mb-0">Web • Ops • Automation</p>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="team-card h-100">
+                        <img src="https://picsum.photos/seed/m4/500/500" alt="Neha Singh, Athletics Captain" class="team-photo mb-3" />
+                        <h5 class="mb-1" style="color:var(--navy);">Neha Singh</h5>
+                        <div class="team-role mb-2">Athletics Captain</div>
+                        <p class="small text-muted mb-0">Sprints • Relays • Coaching</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-1">Achievements</h2>
+            <p class="section-subtitle">Key milestones that define our legacy</p>
+
+            <!-- Changed to an unordered list for better semantic meaning of a timeline -->
+            <ul class="timeline list-unstyled">
+                <li class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="ms-5">
+                        <h6 class="mb-1" style="color:var(--navy);">Inter-College Football Champions</h6>
+                        <p class="small text-muted mb-1">2024</p>
+                        <p class="mb-0">Clinched the title with an unbeaten run, conceding only two goals in the tournament.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="ms-5">
+                        <h6 class="mb-1" style="color:var(--navy);">Volleyball State Qualifiers — Semi-finalists</h6>
+                        <p class="small text-muted mb-1">2023</p>
+                        <p class="mb-0">First-ever state appearance for the college team; recognition for best defensive play.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="ms-5">
+                        <h6 class="mb-1" style="color:var(--navy);">Athletics Meet — 12 Medals</h6>
+                        <p class="small text-muted mb-1">2022</p>
+                        <p class="mb-0">Across sprints, long jump, and shot put; standout performance in 4x100m relay.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-1">Contact Us</h2>
+                    <p class="section-subtitle">Ask a question or register interest</p>
+
+                    <!-- NOTE: Replace the src with your actual Google Form link (published) -->
+                    <div class="ratio ratio-4x3 rounded overflow-hidden border">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-example/viewform?embedded=true" title="Google Form" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h-100 p-4 p-lg-5 bg-white border rounded-4">
+                        <h5 style="color:var(--navy);">Club Info</h5>
+                        <p class="mb-1"><strong>Email:</strong> sportsclub@example.edu</p>
+                        <p class="mb-1"><strong>Phone:</strong> +91 98765 43210</p>
+                        <p class="mb-3"><strong>Address:</strong> Campus Sports Complex, Your College, Your City</p>
+
+                        <div class="d-flex gap-3">
+                            <a href="#" aria-label="Instagram" class="fs-4"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="Facebook" class="fs-4"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="Twitter" class="fs-4"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="YouTube" class="fs-4"><i class="bi bi-youtube"></i></a>
+                        </div>
+
+                        <hr class="my-4" />
+
+                        <!-- NOTE: Replace the src with your actual Google Maps link -->
+                        <div class="ratio ratio-16x9 rounded overflow-hidden border">
+                            <iframe
+                                title="Map"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps?q=Your%20College%20Sports%20Complex&output=embed">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="mb-2">Sports Club</h5>
+                    <p class="mb-0">© <span id="year"></span> Sports Club. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#home" class="me-3">Home</a>
+                    <a href="#events" class="me-3">Events</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-gold rounded-circle p-3" aria-label="Back to top">↑</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- LightGallery JS and plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+
+    <script>
+        // Initialize the Hero Swiper slider
+        const heroSwiper = new Swiper('.hero-swiper', {
+            loop: true,
+            autoplay: {
+                delay: 4500, // Time in milliseconds between slides
+                disableOnInteraction: false // Autoplay will not be disabled after user interaction
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true // Makes the pagination dots clickable
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            effect: 'fade', // Fade effect between slides
+            speed: 800, // Transition speed
+        });
+
+        // Initialize LightGallery for the photo gallery
+        lightGallery(document.getElementById('lightgallery'), {
+            selector: 'a', // Selects all <a> tags within the element
+            plugins: [lgZoom, lgThumbnail], // Enables zoom and thumbnail plugins
+            licenseKey: '0000-0000-000-0000', // Placeholder license key
+            speed: 400 // Transition speed
+        });
+
+        // Closes the mobile navigation menu when a link is clicked
+        const navLinks = document.querySelectorAll('#mainNav .nav-link');
+        navLinks.forEach(link => link.addEventListener('click', () => {
+            const navbar = document.getElementById('navMenu');
+            if (navbar.classList.contains('show')) {
+                new bootstrap.Collapse(navbar).hide();
+            }
+        }));
+
+        // Back to Top button logic
+        const backToTop = document.getElementById('backToTop');
+        // Show/hide button on scroll
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.scrollY > 600 ? 'block' : 'none';
+        });
+        // Scroll to the top when button is clicked
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Dynamically set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
